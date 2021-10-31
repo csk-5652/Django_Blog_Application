@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<div class="container">
+<div class="card mt-3" >
+        <div class="card-body">
+          <h5 class="card-title">{{blog.title}}</h5>
+          <h6>{{blog.time}}</h6>
+          <p class="card-text">{{blog.content|safe}}</p>
+          
+          <div class="form-floating">
+          <form action="" method="POST">
+          {% csrf_token %}
+              <textarea class="form-control" name="comment" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <br>
+              <button type="submit" class="btn btn-warning">Post</button>
+          </form>
+          </div>
+          <hr>
+          <a href="{% url 'blog' %}" class="btn btn-info">  Back</a>
+        </div>
+        </div>
+        </div>
+{% endblock body %}

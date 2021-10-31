@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock title %}
+
+{% block body %}
+<!-- main  -->
+      
+      <h3 class="px-5 mt-3" ></h3>
+      <hr style="margin: 20px;">
+      <div class="container">
+{% for blog in blogs  %}
+      <div class="card m-3">
+        <div class="card-body">
+          <h5 class="card-title">{{blog.title}}</h5>
+          <p class="card-text">{{blog.content|safe|slice:200}}.......................</p>
+          
+               
+                                
+          <a href="/blogpost/{{blog.slug}}" class="btn btn-info">Read More</a>
+          
+        </div>
+      </div>
+{% endfor %}       
+    </div>
+      <!-- main  -->
+{% endblock body %}
+

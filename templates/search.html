@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<!-- main  -->
+<div class="container">
+      <header class="pb-3 mb-4 border-bottom">
+      <h3 class="px-5 mt-3" >Search Result</h3>
+      </header>
+      {% if allposts|length < 1 %}
+      <p style="color:red;">No Search Result Found</p>
+      <p style="color:blue;">Your search : " {{query}} " Did not match any blog.</p>
+      <br>Suggestions:-
+      <ul>
+      <li>Make sure that all words are spelled correctly.</li>
+      <li>Try different keywords.</li>
+      <li>Try fewer keywords.</li>
+      </ul>
+      <div class="text-center"> <img src="{% static 'img/avatar1.png' %}" width="100" class="rounded-circle"> </div>
+      {% endif %}
+</div>
+      <div class="container">
+{% for blog in allposts  %}
+      <div class="card m-3">
+        <div class="card-body">
+          <h5 class="card-title">{{blog.title}}</h5>
+          <p class="card-text">{{blog.content|safe|slice:200}}.......................</p>
+          <a href="/blogpost/{{blog.slug}}" class="btn btn-info">Read More</a>
+        </div>
+      </div>
+{% endfor %}       
+    </div>
+      <!-- main  -->
+{% endblock body %} 
+
+
