@@ -16,13 +16,10 @@ Python 3.9.2 +
 
 Django 3.2.6+
 
-django-jazzmin 2.4.8+
-
-Pillow 8.1.2+
  
 To be able to use the blog application, you firstly need to clone in your local computer:-
 
-git clone https://github.com/csk-5652/Django_Blog_Application.git
+
 
 Then please create a new virtual environment in desired path and activate:-
  
