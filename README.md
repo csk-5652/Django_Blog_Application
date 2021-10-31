@@ -19,7 +19,7 @@ Django 3.2.6+
  
 To be able to use the blog application, you firstly need to clone in your local computer:-
 
-
+git clone https://github.com/csk-5652/Django_Blog_Application.git
 
 Then please create a new virtual environment in desired path and activate:-
  
