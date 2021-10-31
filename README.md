@@ -5,33 +5,39 @@ Setup:-
 
 To run this app, you will need to follow these steps:-
 
+
 Requirements:-
 
- 
+
 A Laptop or PC
+
 
 Text Editor or IDE (eg. vscode, PyCharm)
 
+
 Python 3.9.2 +
+
 
 Django 3.2.6+
 
- 
+
 To be able to use the blog application, you firstly need to clone in your local computer:-
+
 
 git clone https://github.com/csk-5652/Django_Blog_Application.git
 
 Then please create a new virtual environment in desired path and activate:-
  
+ 
 pip install virtualenv 
 
+
 virtualenv --version 
+
 
 virtualenv my_name virtualenv -p /usr/bin/python3 virtualenv_name 
 
 source virtualenv_name/bin/activate
-
-
 
 pip install -r requirements.txt
  
@@ -41,16 +47,6 @@ python manage.py makemigrations
 
 python manage.py migrate
  
- 
-Admin login:- 
-
-Username : admin 
-
-Password : admin
-
-or you can simply create a superuser for yourself using the following command:-
-
-python manage.py createsuperuser
 
 After completing all these steps, you can now run your application:-
 
@@ -83,5 +79,8 @@ python manage.py runserver.
 7.
 
 ![tem7](https://user-images.githubusercontent.com/79008598/139535150-d29dd364-7d0f-4210-8d44-fee283326da4.png)
+
+Demo link:-
+https://blogxzz.herokuapp.com/
 
 
